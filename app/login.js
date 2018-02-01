@@ -2,7 +2,7 @@ let auth   = require('authentication');
 let dbm = require('database');
 let dbConfig = getBitcodeConfig('database')();
 let db = dbm.createDbInstance(dbConfig);
-
+let errorUtil = require('../common/util/error');
 
 function selectLogin() {
   return 'SELECT f.id, f.nome, p.id as id_perfil, p.nome nome_perfil '+
@@ -44,13 +44,17 @@ function prepararRetornoUsuario(resultado) {
 }
 
 function login (params, request, response) {
+  if (!params.username || !params.senha) {
+    errorUtil.registrarErro(response, 'error.required.usuario_senha');
+    return;
+  }
   let usuario = db.execute(selectLogin(), {username: params.username, senha: params.senha});
   if (usuario && usuario.length > 0) {
     auth.createAuthentication(params, request, response, 1, 'mega-pdv', prepararRetornoUsuario(usuario[0]));
     response.json({loginOk: true});
     return;
   }
-  response.json({loginOk: false, message: 'Usuário ou senha incorretos.'});
+  errorUtil.registrarErro(response, 'error.invalid.usuario_senha');
 }
 
 function logout (params, request, response) {

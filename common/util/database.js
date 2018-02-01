@@ -1,16 +1,14 @@
+let errorUtil = require('../common/util/error');
+
 function preencherChaveAposInsert(resultado, objeto) {
   if (resultado.keys && resultado.keys[0])
     return Object.assign({id: resultado.keys[0]}, objeto);
   return objeto;
 }
 
-function registrarErroNoResponse(response, resultado, mensagem) {
-  response.json({errors: [mensagem]}, 400);
-}
-
 function tratarRetorno(response, resultado, mensagemErro, params, callbackSucesso) {
   if (resultado.error) {
-    registrarErroNoResponse(response, resultado, mensagem);
+    errorUtil.registrarErro(response, mensagem);
   } else {
     if (callbackSucesso) callbackSucesso();
   }
@@ -19,6 +17,5 @@ function tratarRetorno(response, resultado, mensagemErro, params, callbackSucess
 
 exports = {
   preencherChaveAposInsert: preencherChaveAposInsert,
-  registrarErroNoResponse: registrarErroNoResponse,
   tratarRetorno: tratarRetorno
 };

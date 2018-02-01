@@ -1,0 +1,218 @@
+{
+	"id": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+	"name": "MegaPDV",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Login",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"order": [
+				"9420d73f-b1d0-d449-ee8a-56e8b9e025dc"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "d06baad2-de72-f799-1576-555f69715ca3"
+		},
+		{
+			"name": "Produto",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"order": [
+				"f28b020d-74b8-0852-6a58-cb3591735540",
+				"7098352d-cfb9-88b3-f0db-afa02e7922c6",
+				"d746f5b2-4ec7-06a9-8e18-c79b3226c09f",
+				"2411784f-20c1-7744-778d-a0f155c6a2bb",
+				"74305712-c4fa-fb65-e87a-372ac7c0ae52"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "271f1d2b-b312-8715-cf51-5bc6867b6d11"
+		}
+	],
+	"folders_order": [
+		"d06baad2-de72-f799-1576-555f69715ca3",
+		"271f1d2b-b312-8715-cf51-5bc6867b6d11"
+	],
+	"timestamp": 1517431332242,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2411784f-20c1-7744-778d-a0f155c6a2bb",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8778/app/produto/7",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"data": null,
+			"dataMode": "params",
+			"name": "obter",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1517448094301,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "271f1d2b-b312-8715-cf51-5bc6867b6d11"
+		},
+		{
+			"id": "7098352d-cfb9-88b3-f0db-afa02e7922c6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8778/app/produto",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1517503037934,
+			"name": "alterar",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"responses": [],
+			"rawModeData": "{\"id\":2, \"nome\": \"TV LG\", \"descricao\": \"52 4K\", \"preco\": 3557.54 }"
+		},
+		{
+			"id": "74305712-c4fa-fb65-e87a-372ac7c0ae52",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8778/app/produto/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"data": [],
+			"dataMode": "raw",
+			"name": "deletar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1517448147723,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "271f1d2b-b312-8715-cf51-5bc6867b6d11",
+			"rawModeData": "{ \"id\": 7 }"
+		},
+		{
+			"id": "9420d73f-b1d0-d449-ee8a-56e8b9e025dc",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8778/@auth/login",
+			"folder": "d06baad2-de72-f799-1576-555f69715ca3",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1517438731270,
+			"name": "login",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"responses": [],
+			"rawModeData": "{\"username\": \"gerente\", \"senha\": \"gerente\" }"
+		},
+		{
+			"id": "d746f5b2-4ec7-06a9-8e18-c79b3226c09f",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8778/app/produto?nome=TV",
+			"folder": "271f1d2b-b312-8715-cf51-5bc6867b6d11",
+			"queryParams": [
+				{
+					"key": "nome",
+					"value": "TV",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1517448236057,
+			"name": "buscar",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"responses": []
+		},
+		{
+			"id": "f28b020d-74b8-0852-6a58-cb3591735540",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8778/app/produto",
+			"folder": "271f1d2b-b312-8715-cf51-5bc6867b6d11",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1517448009540,
+			"name": "salvar",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"responses": [],
+			"rawModeData": "{\"nome\": \"TV LG\", \"descricao\": \"52 4K\", \"preco\": 3557.54 }"
+		}
+	]
+}

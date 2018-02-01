@@ -22,7 +22,7 @@ CREATE TABLE perfil_roles (
 INSERT INTO perfil (nome) VALUES ('Gerente');
 INSERT INTO perfil (nome) VALUES ('Vendedor');
 
-INSERT INTO roles(nome, uri, method) values ('PRODUTO_OBTER', '/app/produto/:id', 'GET');
+INSERT INTO roles(nome, uri, method) values ('PRODUTO_OBTER', '/app/produto/[0-9]+', 'GET');
 
 INSERT INTO perfil_roles(id_perfil, nome_role)
 VALUES (
