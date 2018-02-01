@@ -1,0 +1,15 @@
+{
+  "name": "mega-pdv",
+  "version": "1.0",
+  "dependencies": {
+    "bitcodes": [
+      "thrust-bitcodes/http",
+      "thrust-bitcodes/filesystem",
+      "thrust-bitcodes/database",
+      "authentication"
+    ],
+    "jars": [
+      "org.postgresql:postgresql:42.2.0"
+    ]
+  }
+}
