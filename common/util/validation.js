@@ -99,18 +99,18 @@ function validateFieldWithRule(object, field, rule) {
 
 function validateField(object, field) {
   let errors = [];
-  field.rules.forEach(function (sRule) {
-    let error = validateFieldWithRule(object, field, prepareRule(sRule));
+  for (let i = 0; i < field.rules.length; i++) {
+    let error = validateFieldWithRule(object, field, prepareRule(field.rules[i]));
     if (error) errors.push(error);
-  });
+  }
   return errors;
 }
 
 function validate(object, fields) {
   let errors = [];
-  fields.forEach(function (field) {
-    errors = errors.concat(validateField(object, field));
-  });
+  for (let i = 0; i < fields.length; i++) {
+    errors = errors.concat(validateField(object, fields[i]));
+  }
   return errors;
 }
 

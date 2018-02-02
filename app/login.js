@@ -3,19 +3,7 @@ let dbm = require('database');
 let dbConfig = getBitcodeConfig('database')();
 let db = dbm.createDbInstance(dbConfig);
 let errorUtil = require('../common/util/error');
-
-function selectLogin() {
-  return 'SELECT f.id, f.nome, p.id as id_perfil, p.nome nome_perfil '+
-    'FROM funcionario f INNER JOIN perfil p ON f.id_perfil = p.id '+
-    'WHERE f.ativo = TRUE '+
-    'AND p.ativo = TRUE '+
-    'AND f.username = :username '+
-    'AND f.senha = :senha';
-}
-
-function selectRoles() {
-  return 'select nome_role from perfil_roles WHERE id_perfil = :id_perfil';
-}
+let query = require('../common/query/login');
 
 function converterRoles(roles) {
   return roles.map(function(r) { return r.nome_role; });
@@ -33,7 +21,7 @@ function converterUsuario(usuario){
 }
 
 function consultarRoles(idPerfil) {
-  let rs = db.execute(selectRoles(), {id_perfil: idPerfil});
+  let rs = db.execute(query.selectRoles(), {id_perfil: idPerfil});
   return converterRoles(rs);
 }
 
@@ -48,7 +36,7 @@ function login (params, request, response) {
     errorUtil.registrarErro(response, 'error.required.usuario_senha');
     return;
   }
-  let usuario = db.execute(selectLogin(), {username: params.username, senha: params.senha});
+  let usuario = db.execute(query.selectLogin(), {username: params.username, senha: params.senha});
   if (usuario && usuario.length > 0) {
     auth.createAuthentication(params, request, response, 1, 'mega-pdv', prepararRetornoUsuario(usuario[0]));
     response.json({loginOk: true});

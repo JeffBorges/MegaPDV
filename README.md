@@ -45,3 +45,6 @@ Com o flyway instalado, execute o seguinte comando para executar os scripts de c
 ```bash
 flyway -configFiles=db/config/flyway.conf migrate
 ```
+
+##Importação
+Devesse incluir o diretorio "\opt\softbox\MegaPDV" para realizar a importação. 

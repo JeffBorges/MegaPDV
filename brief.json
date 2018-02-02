@@ -6,7 +6,9 @@
       "thrust-bitcodes/http",
       "thrust-bitcodes/filesystem",
       "thrust-bitcodes/database",
-      "authentication"
+      "authentication",
+      "etl",
+      "http"
     ],
     "jars": [
       "org.postgresql:postgresql:42.2.0"
