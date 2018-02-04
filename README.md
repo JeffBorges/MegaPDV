@@ -46,8 +46,8 @@ Com o flyway instalado, execute o seguinte comando para executar os scripts de c
 flyway -configFiles=db/config/flyway.conf migrate
 ```
 
-##Importação
+## Importação
 Devesse incluir o diretorio "\opt\softbox\MegaPDV" para realizar a importação. 
 
-##Roles
+## Roles
 Podesse utilizar as regras de regex do [Postgresql](https://www.postgresql.org/docs/9.3/static/functions-matching.html) na inclusão de roles.
