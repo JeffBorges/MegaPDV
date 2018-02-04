@@ -5,11 +5,38 @@
 	"order": [],
 	"folders": [
 		{
+			"name": "CEP",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"order": [
+				"8a405de9-43d1-bcca-bfa3-89b4ce7e28b0"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "c18544ee-cd3c-4061-e3c1-ab1105ffe647"
+		},
+		{
+			"name": "Cliente",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"order": [
+				"0801313a-8b7b-daf5-3369-0bdfaad704f7",
+				"f229e491-f475-5fce-2276-713951ea1ccf",
+				"9af6946d-e45d-bf75-3e2c-904a23a0b7e4",
+				"a9224905-2057-3196-67d8-c12e0f191c2d",
+				"e416f5f1-22a3-c98c-4036-7f22a98c4ae2"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "99ee1473-9abf-901e-bfd9-c8d1d680da4f"
+		},
+		{
 			"name": "Login",
 			"description": "",
 			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
 			"order": [
-				"9420d73f-b1d0-d449-ee8a-56e8b9e025dc"
+				"9420d73f-b1d0-d449-ee8a-56e8b9e025dc",
+				"4d5de8e9-8c87-d1d0-8783-de9dc2556ec9"
 			],
 			"owner": 0,
 			"folders_order": [],
@@ -24,7 +51,8 @@
 				"7098352d-cfb9-88b3-f0db-afa02e7922c6",
 				"d746f5b2-4ec7-06a9-8e18-c79b3226c09f",
 				"2411784f-20c1-7744-778d-a0f155c6a2bb",
-				"74305712-c4fa-fb65-e87a-372ac7c0ae52"
+				"74305712-c4fa-fb65-e87a-372ac7c0ae52",
+				"a99eab33-0477-988a-5461-74b04f615ce1"
 			],
 			"owner": 0,
 			"folders_order": [],
@@ -33,17 +61,74 @@
 	],
 	"folders_order": [
 		"d06baad2-de72-f799-1576-555f69715ca3",
-		"271f1d2b-b312-8715-cf51-5bc6867b6d11"
+		"271f1d2b-b312-8715-cf51-5bc6867b6d11",
+		"c18544ee-cd3c-4061-e3c1-ab1105ffe647",
+		"99ee1473-9abf-901e-bfd9-c8d1d680da4f"
 	],
 	"timestamp": 1517431332242,
 	"owner": 0,
 	"public": false,
 	"requests": [
 		{
+			"id": "0801313a-8b7b-daf5-3369-0bdfaad704f7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8778/app/cliente",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"data": [],
+			"dataMode": "raw",
+			"name": "salvar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1517782990954,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "99ee1473-9abf-901e-bfd9-c8d1d680da4f",
+			"rawModeData": "{\"nome\": \"João Sebastião\", \"cpf\": \"33861870991\", \"email\": \"joao.sebastiao@fmail.com\", \"endereco\": {\"cep\": \"38411145\", \"logradouro\": \"Avenida Paulo Gracindo\", \"complemento\": \"(Lot S da Gávea)\", \"bairro\":\"Gávea\", \"numero\": \"15\", \"localidade\": \"Uberlândia\", \"uf\": \"MG\"}}"
+		},
+		{
 			"id": "2411784f-20c1-7744-778d-a0f155c6a2bb",
 			"headers": "",
 			"headerData": [],
-			"url": "http://localhost:8778/app/produto/7",
+			"url": "http://localhost:8778/app/produto/6",
+			"folder": "271f1d2b-b312-8715-cf51-5bc6867b6d11",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1517683263699,
+			"name": "obter",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"responses": []
+		},
+		{
+			"id": "4d5de8e9-8c87-d1d0-8783-de9dc2556ec9",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8778/@auth/logout",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
@@ -52,16 +137,16 @@
 			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
 			"data": null,
 			"dataMode": "params",
-			"name": "obter",
+			"name": "logout",
 			"description": "",
 			"descriptionFormat": "html",
-			"time": 1517448094301,
+			"time": 1517784454452,
 			"version": 2,
 			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "271f1d2b-b312-8715-cf51-5bc6867b6d11"
+			"folder": "d06baad2-de72-f799-1576-555f69715ca3"
 		},
 		{
 			"id": "7098352d-cfb9-88b3-f0db-afa02e7922c6",
@@ -75,6 +160,7 @@
 				}
 			],
 			"url": "http://localhost:8778/app/produto",
+			"folder": "271f1d2b-b312-8715-cf51-5bc6867b6d11",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -85,12 +171,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1517503037934,
+			"time": 1517683254952,
 			"name": "alterar",
 			"description": "",
 			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
 			"responses": [],
-			"rawModeData": "{\"id\":2, \"nome\": \"TV LG\", \"descricao\": \"52 4K\", \"preco\": 3557.54 }"
+			"rawModeData": "{\"id\":6, \"nome\": \"TV LG\", \"descricao\": \"52 4K\", \"preco\": 3557.54, \"dataVencimento\": \"2018-05-20\" }"
 		},
 		{
 			"id": "74305712-c4fa-fb65-e87a-372ac7c0ae52",
@@ -104,25 +190,48 @@
 				}
 			],
 			"url": "http://localhost:8778/app/produto/",
+			"folder": "271f1d2b-b312-8715-cf51-5bc6867b6d11",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1517683270067,
+			"name": "deletar",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"responses": [],
+			"rawModeData": "{ \"id\": 11 }"
+		},
+		{
+			"id": "8a405de9-43d1-bcca-bfa3-89b4ce7e28b0",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8778/app/cep/38411145/",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
 			"preRequestScript": null,
-			"method": "DELETE",
+			"method": "GET",
 			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
-			"data": [],
-			"dataMode": "raw",
-			"name": "deletar",
+			"data": null,
+			"dataMode": "params",
+			"name": "buscar",
 			"description": "",
 			"descriptionFormat": "html",
-			"time": 1517448147723,
+			"time": 1517769533573,
 			"version": 2,
 			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "271f1d2b-b312-8715-cf51-5bc6867b6d11",
-			"rawModeData": "{ \"id\": 7 }"
+			"folder": "c18544ee-cd3c-4061-e3c1-ab1105ffe647"
 		},
 		{
 			"id": "9420d73f-b1d0-d449-ee8a-56e8b9e025dc",
@@ -155,6 +264,99 @@
 			"rawModeData": "{\"username\": \"gerente\", \"senha\": \"gerente\" }"
 		},
 		{
+			"id": "9af6946d-e45d-bf75-3e2c-904a23a0b7e4",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8778/app/cliente/3/",
+			"folder": "99ee1473-9abf-901e-bfd9-c8d1d680da4f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1517783711498,
+			"name": "obter",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"responses": []
+		},
+		{
+			"id": "a9224905-2057-3196-67d8-c12e0f191c2d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8778/app/cliente/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"data": [],
+			"dataMode": "raw",
+			"name": "deletar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1517783567815,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "99ee1473-9abf-901e-bfd9-c8d1d680da4f",
+			"rawModeData": "{ \"id\": 2 }"
+		},
+		{
+			"id": "a99eab33-0477-988a-5461-74b04f615ce1",
+			"headers": "",
+			"headerData": [
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8778/app/produto/importar",
+			"folder": "271f1d2b-b312-8715-cf51-5bc6867b6d11",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "produtos.xlsx",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1517762181720,
+			"name": "importar",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"responses": []
+		},
+		{
 			"id": "d746f5b2-4ec7-06a9-8e18-c79b3226c09f",
 			"headers": "",
 			"headerData": [],
@@ -185,6 +387,66 @@
 			"responses": []
 		},
 		{
+			"id": "e416f5f1-22a3-c98c-4036-7f22a98c4ae2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8778/app/cliente/",
+			"folder": "99ee1473-9abf-901e-bfd9-c8d1d680da4f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1517783956148,
+			"name": "alterar",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"responses": [],
+			"rawModeData": "{ \"id\": 3, \"nome\": \"Joaquim\", \"cpf\": \"60608667196\", \"email\": \"joaquim.sebastiao@fmail.com\", \"endereco\": {\"id\": 15, \"cep\": \"01001000\", \"logradouro\": \"Praça da Sé\", \"complemento\": \"lado ímpar\", \"bairro\":\"Sé\", \"numero\": \"154\", \"localidade\": \"São Paulo\", \"uf\": \"SP\"}}"
+		},
+		{
+			"id": "f229e491-f475-5fce-2276-713951ea1ccf",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8778/app/cliente?nome=j",
+			"folder": "99ee1473-9abf-901e-bfd9-c8d1d680da4f",
+			"queryParams": [
+				{
+					"key": "nome",
+					"value": "j",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1517783359959,
+			"name": "buscar",
+			"description": "",
+			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
+			"responses": []
+		},
+		{
 			"id": "f28b020d-74b8-0852-6a58-cb3591735540",
 			"headers": "Content-Type: application/json\n",
 			"headerData": [
@@ -207,12 +469,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1517448009540,
+			"time": 1517683184357,
 			"name": "salvar",
 			"description": "",
 			"collectionId": "ace57558-3ad7-3bc5-319b-3f7d6bec38af",
 			"responses": [],
-			"rawModeData": "{\"nome\": \"TV LG\", \"descricao\": \"52 4K\", \"preco\": 3557.54 }"
+			"rawModeData": "{\"nome\": \"TV LG\", \"descricao\": \"52 4K\", \"preco\": 3557.54, \"dataVencimento\": \"2018-05-20\"}"
 		}
 	]
 }
