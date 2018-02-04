@@ -3,7 +3,7 @@ function min(object, field, rule) {
   const min = rule.params.value || 0;
   let value = object[field.field];
 
-  if (typeof value !== 'number' || value === undefined) return error;
+  if (typeof value !== 'number' || value === undefined) return;
 
   if (value < min) {
     error = {

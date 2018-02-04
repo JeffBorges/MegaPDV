@@ -1,4 +1,5 @@
-let rules = require('./validation-rules');
+let rules = require('./validation-rules/index');
+let errorUtil = require('./error');
 
 function prepareParams(rule, sParam) {
   let rs = sParam.split(':');
@@ -32,14 +33,30 @@ function validateField(object, field) {
   return errors;
 }
 
+function validateSubObject(object, field) {
+  const result = [];
+  const errors = validate(object[field.field], field.fields);
+  if (errors && errors.length) result.push({ field: field.field, errors: errors})
+  return result;
+}
+
 function validate(object, fields) {
   let errors = [];
   for (let i = 0; i < fields.length; i++) {
-    errors = errors.concat(validateField(object, fields[i]));
+    let field = fields[i];
+    errors = errors.concat(validateField(object, field));
+    if (field.fields && object[field.field]) errors = errors.concat(validateSubObject(object, field));
   }
   return errors;
 }
 
+function validateExecFunctionIfSuccess(params, response, fields, fnc) {
+  let errors = validate(params, fields);
+  if (errors.length) errorUtil.registrarErros(response, errors);
+  else fnc();
+}
+
 exports = {
-  validate: validate
+  validate: validate,
+  validateExecFunctionIfSuccess: validateExecFunctionIfSuccess
 };

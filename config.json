@@ -10,7 +10,7 @@
   "authentication": {
     "notAuthenticatedUrls": [
       "/@auth/login",
-      "/app/test/hello"
+      "/@auth/logout"
     ],
     "useSecureAuthentication": false,
     "accessTokenTTL": 300000,

@@ -46,7 +46,7 @@ function executarBusca(params) {
   return prepararResultado(db.execute(prepararConsulta(params), params));
 }
 
-function inserirProduto(params) {
+function inserir(params) {
   return db.insert('produto',conveterParametrosAntesSalvar(params));
 }
 
@@ -76,7 +76,7 @@ function salvarItenImportacao(produto) {
   if (errors.length) {
     return errors;
   }
-  if (inserirProduto(produto).error) {
+  if (inserir(produto).error) {
     return {
       message: 'erro.salvar.produto',
       linha: rowId
@@ -104,5 +104,5 @@ exports = {
   lerArquivo: lerArquivo,
   executarBusca: executarBusca,
   conveterParametrosAntesSalvar: conveterParametrosAntesSalvar,
-  inserirProduto: inserirProduto
+  inserir: inserir
 };

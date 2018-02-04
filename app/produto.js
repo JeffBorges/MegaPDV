@@ -21,41 +21,36 @@ function obter(params, request, response) {
 }
 
 function salvar(params, request, response) {
-  let errors = validation.validate(params, business.regrasValidacao);
-  if (errors.length) {
-    errorUtil.registrarErros(response, errors);
-    return;
-  }
-  let rs = business.inserirProduto(params);
-  dbUtil.tratarRetorno(response, rs, 'erro.salvar.produto', params,
-    function () { response.json(dbUtil.preencherChaveAposInsert(rs, params)) });
+  validation.validateExecFunctionIfSuccess(params, response, business.regrasValidacao,
+    function () {
+      let rs = business.inserir(params);
+      dbUtil.tratarRetorno(response, rs, 'erro.salvar.produto', params,
+        function () { response.json(dbUtil.preencherChaveAposInsert(rs, params)) });
+    });
 }
 
 function atualizar(params, request, response) {
-  let errors = validation.validate(params, [{ field: 'id', rules: ['required', 'min:1']}].concat(business.regrasValidacao));
-  if (errors.length) {
-    errorUtil.registrarErros(response, errors);
-    return;
-  }
-  let rs = db.update('produto', business.conveterParametrosAntesSalvar(params), { id: params.id } );
-  dbUtil.tratarRetorno(response, rs, 'erro.atualizar.produto');
+  const fields = [{ field: 'id', rules: ['required', 'min:1']}].concat(business.regrasValidacao);
+  validation.validateExecFunctionIfSuccess(params, response, fields,
+    function () {
+      let rs = db.update('produto', business.conveterParametrosAntesSalvar(params), { id: params.id } );
+      dbUtil.tratarRetorno(response, rs, 'erro.atualizar.produto');
+    });
 }
 
 function deletar(params, request, response) {
-  let errors = validation.validate(params, [{ field: 'id', rules: ['required', 'min:1']}]);
-  if (errors.length) {
-    errorUtil.registrarErros(response, errors);
-    return;
-  }
-  let rs = db.delete('produto', params);
-  dbUtil.tratarRetorno(response, rs, 'erro.deletar.produto');
+  const fields = [{ field: 'id', rules: ['required', 'min:1']}];
+  validation.validateExecFunctionIfSuccess(params, response, fields,
+    function () {
+      let rs = db.delete('produto', params);
+      dbUtil.tratarRetorno(response, rs, 'erro.deletar.produto');
+    });
 }
 
 function importar(params, request, response) {
   try {
     business.lerArquivo(fileUtil.requestFileStorage(request, 'produtos', 'xlsx'), response);
   } catch (exception) {
-    print(exception);
     print(exception.stack);
     errorUtil.registrarErros(response, 'error.importar.produto', 500);
   }
