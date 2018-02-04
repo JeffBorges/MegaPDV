@@ -1,66 +1,4 @@
-function required(object, field) {
-  let error;
-  let value = object[field.field];
-  if ((value === undefined) || (typeof value === 'string' && !value.trim())) {
-    error = 'required.' + field.field;
-  }
-  return error;
-}
-
-function size(object, field, rule) {
-  let error;
-  const min = rule.params.min || 0;
-  const max = rule.params.max || 0;
-  let value = object[field.field];
-
-  if (typeof value !== 'string' || !value) return error;
-
-  if (value.length < min || value.length > max) {
-    error = {
-      message: 'size.' + field.field,
-      params: {
-        min: min,
-        max: max
-      }
-    };
-  }
-
-  return error;
-}
-
-function min(object, field, rule) {
-  let error;
-  const min = rule.params.value || 0;
-  let value = object[field.field];
-
-  if (typeof value !== 'number' || value === undefined) return error;
-
-  if (value < min) {
-    error = {
-      message: 'min.' + field.field,
-      params: { min: min }
-    };
-  }
-
-  return error;
-}
-
-function max(object, field, rule) {
-  let error;
-  const max = rule.params.value || 0;
-  let value = object[field.field];
-
-  if (typeof value !== 'number' || value === undefined) return error;
-
-  if (value > max) {
-    error = {
-      message: 'max.' + field.field,
-      params: { max: max }
-    };
-  }
-
-  return error;
-}
+let rules = require('./validation-rules');
 
 function prepareParams(rule, sParam) {
   let rs = sParam.split(':');
@@ -80,20 +18,8 @@ function prepareRule(sRule) {
 
 function validateFieldWithRule(object, field, rule) {
   let error;
-  switch (rule.rule) {
-    case 'required':
-      error = required(object, field, rule);
-      break;
-    case 'size':
-      error = size(object, field, rule);
-      break;
-    case 'min':
-      error = min(object, field, rule);
-      break;
-    case 'max':
-      error = max(object, field, rule);
-      break;
-  }
+  let fnRule = rules[rule.rule];
+  if (fnRule !== undefined) error = fnRule(object, field, rule);
   return error;
 }
 

@@ -1,5 +1,5 @@
 function selectBaseProduto() {
-  return 'SELECT id, nome, ativo, descricao, preco FROM produto WHERE 1 = 1';
+  return 'SELECT id, nome, ativo, descricao, preco, data_vencimento FROM produto WHERE 1 = 1';
 }
 
 function addFiltroNome(consulta) {

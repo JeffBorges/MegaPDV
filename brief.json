@@ -8,7 +8,8 @@
       "thrust-bitcodes/database",
       "authentication",
       "etl",
-      "http"
+      "http",
+      "http-client"
     ],
     "jars": [
       "org.postgresql:postgresql:42.2.0"
