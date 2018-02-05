@@ -1,4 +1,4 @@
 tomcat.*
 .lib
 /.idea/
-stactic/node_modules
+static/node_modules/
