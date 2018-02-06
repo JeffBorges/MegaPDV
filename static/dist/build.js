@@ -11415,6 +11415,12 @@ module.exports = g;
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   name: 'TableFixed',
@@ -11423,122 +11429,102 @@ module.exports = g;
       id: 1,
       name: "Shawna Dubbin",
       email: "sdubbin0@geocities.com",
-      gender: "Male",
-      title: "Assistant Media Planner"
+      user: 'Lorem Ipsum'
     }, {
       id: 2,
       name: "Odette Demageard",
       email: "odemageard1@spotify.com",
-      gender: "Female",
-      title: "Account Coordinator"
+      user: 'Lorem Ipsum'
     }, {
       id: 3,
       name: "Vera Taleworth",
       email: "vtaleworth2@google.ca",
-      gender: "Male",
-      title: "Community Outreach Specialist"
+      user: 'Lorem Ipsum'
     }, {
       id: 4,
       name: "Lonnie Izkovitz",
       email: "lizkovitz3@youtu.be",
-      gender: "Female",
-      title: "Operator"
+      user: 'Lorem Ipsum'
     }, {
       id: 5,
       name: "Thatcher Stave",
       email: "tstave4@reference.com",
-      gender: "Male",
-      title: "Software Test Engineer III"
+      user: 'Lorem Ipsum'
     }, {
       id: 6,
       name: "Karim Chipping",
       email: "kchipping5@scribd.com",
-      gender: "Female",
-      title: "Safety Technician II"
+      user: 'Lorem Ipsum'
     }, {
       id: 7,
       name: "Helge Holyard",
       email: "hholyard6@howstuffworks.com",
-      gender: "Female",
-      title: "Internal Auditor"
+      user: 'Lorem Ipsum'
     }, {
       id: 8,
       name: "Rod Titterton",
       email: "rtitterton7@nydailynews.com",
-      gender: "Male",
-      title: "Technical Writer"
+      user: 'Lorem Ipsum'
     }, {
       id: 9,
       name: "Gawen Applewhite",
       email: "gapplewhite8@reverbnation.com",
-      gender: "Female",
-      title: "GIS Technical Architect"
+      user: 'Lorem Ipsum'
     }, {
       id: 10,
       name: "Nero Mulgrew",
       email: "nmulgrew9@plala.or.jp",
-      gender: "Female",
-      title: "Staff Scientist"
+      user: 'Lorem Ipsum'
     }, {
       id: 11,
       name: "Cybill Rimington",
       email: "crimingtona@usnews.com",
-      gender: "Female",
-      title: "Assistant Professor"
+      user: 'Lorem Ipsum'
     }, {
       id: 12,
       name: "Maureene Eggleson",
       email: "megglesonb@elpais.com",
-      gender: "Male",
-      title: "Recruiting Manager"
+      user: 'Lorem Ipsum'
     }, {
       id: 13,
       name: "Cortney Caulket",
       email: "ccaulketc@cbsnews.com",
-      gender: "Male",
-      title: "Safety Technician IV"
+      user: 'Lorem Ipsum'
     }, {
       id: 14,
       name: "Selig Swynfen",
       email: "sswynfend@cpanel.net",
-      gender: "Female",
-      title: "Environmental Specialist"
+      user: 'Lorem Ipsum'
     }, {
       id: 15,
       name: "Ingar Raggles",
       email: "iragglese@cbc.ca",
-      gender: "Female",
-      title: "VP Sales"
+      user: 'Lorem Ipsum'
     }, {
       id: 16,
       name: "Karmen Mines",
       email: "kminesf@topsy.com",
-      gender: "Male",
-      title: "Administrative Officer"
+      user: 'Lorem Ipsum'
     }, {
       id: 17,
       name: "Salome Judron",
       email: "sjudrong@jigsy.com",
-      gender: "Male",
-      title: "Staff Scientist"
+      user: 'Lorem Ipsum'
     }, {
       id: 18,
       name: "Clarinda Marieton",
       email: "cmarietonh@theatlantic.com",
-      gender: "Male",
-      title: "Paralegal"
+      user: 'Lorem Ipsum'
     }, {
       id: 19,
       name: "Paxon Lotterington",
       email: "plotteringtoni@netvibes.com",
-      gender: "Female",
-      title: "Marketing Assistant"
+      user: 'Lorem Ipsum'
     }, {
       id: 20,
       name: "Maura Thoms",
       email: "mthomsj@webeden.co.uk",
-      gender: "Male",
-      title: "Actuary"
+      user: 'Lorem Ipsum'
     }]
   })
 });
@@ -47059,7 +47045,7 @@ exports.push([module.i, ".md-content[data-v-4c3f5ce0]{width:80%;margin:0 auto}",
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b1a98c04_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ProdutosView_vue__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2da22f12_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ProdutosView_vue__ = __webpack_require__(30);
 function injectStyle (ssrContext) {
   __webpack_require__(28)
 }
@@ -47073,12 +47059,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-b1a98c04"
+var __vue_scopeId__ = "data-v-2da22f12"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __vue_script__,
-  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b1a98c04_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ProdutosView_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2da22f12_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ProdutosView_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -47099,7 +47085,7 @@ var content = __webpack_require__(29);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(1)("28c9bfaa", content, true, {});
+var update = __webpack_require__(1)("45cbe829", content, true, {});
 
 /***/ }),
 /* 29 */
@@ -47110,7 +47096,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "#produtos[data-v-b1a98c04]{margin:0 0 40px}.md-display-1[data-v-b1a98c04]{display:block;margin-bottom:20px}.md-card[data-v-b1a98c04]{width:320px;margin:4px;display:inline-block;vertical-align:top}", ""]);
+exports.push([module.i, "#produtos[data-v-2da22f12]{margin:0 0 40px}.md-display-1[data-v-2da22f12]{display:block;margin-bottom:20px}.md-card[data-v-2da22f12]{width:320px;margin:4px;display:inline-block;vertical-align:top}", ""]);
 
 // exports
 
@@ -47120,8 +47106,8 @@ exports.push([module.i, "#produtos[data-v-b1a98c04]{margin:0 0 40px}.md-display-
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"produtos"}},[_c('span',{staticClass:"md-display-1"},[_vm._v("Produtos")]),_vm._v(" "),_c('div',{staticClass:"md-layout"},[_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1)])])}
-var staticRenderFns = []
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"produtos"}},[_c('div',{staticClass:"md-layout"},[_vm._m(0),_vm._v(" "),_c('div',{staticClass:"md-alignment-top-right"},[_c('md-button',[_vm._v("Novo Produto")])],1)]),_vm._v(" "),_c('div',{staticClass:"md-layout"},[_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"md-layout md-alignment-center-center md-gutter"},[_c('md-card',{attrs:{"md-with-hover":""}},[_c('md-card-header',[_c('div',{staticClass:"md-title"},[_vm._v("Produto exemplo")]),_vm._v(" "),_c('div',{staticClass:"md-subhead"},[_vm._v("It also have a ripple")])]),_vm._v(" "),_c('md-card-content',[_vm._v("\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.\n            ")]),_vm._v(" "),_c('md-card-actions',[_c('md-button',[_vm._v("Editar")])],1)],1)],1)])])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"md-layout-item"},[_c('span',{staticClass:"md-display-1"},[_vm._v("Produtos")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
@@ -47132,7 +47118,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_FuncionariosView_vue__ = __webpack_require__(7);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7adc0b71_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_FuncionariosView_vue__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0210635c_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_FuncionariosView_vue__ = __webpack_require__(34);
 function injectStyle (ssrContext) {
   __webpack_require__(32)
 }
@@ -47147,12 +47133,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-7adc0b71"
+var __vue_scopeId__ = "data-v-0210635c"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_FuncionariosView_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7adc0b71_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_FuncionariosView_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0210635c_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_FuncionariosView_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -47173,7 +47159,7 @@ var content = __webpack_require__(33);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(1)("22d0c9a8", content, true, {});
+var update = __webpack_require__(1)("88987b16", content, true, {});
 
 /***/ }),
 /* 33 */
@@ -47184,7 +47170,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "#funcionarios[data-v-7adc0b71]{margin:0 0 40px}.md-display-1[data-v-7adc0b71]{display:block;margin-bottom:20px}.md-table[data-v-7adc0b71]{width:100%}", ""]);
+exports.push([module.i, "#funcionarios[data-v-0210635c]{margin:0 0 40px}.md-display-1[data-v-0210635c]{display:block;margin-bottom:20px}.md-table[data-v-0210635c]{width:100%}", ""]);
 
 // exports
 
@@ -47194,10 +47180,10 @@ exports.push([module.i, "#funcionarios[data-v-7adc0b71]{margin:0 0 40px}.md-disp
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"funcionarios"}},[_c('span',{staticClass:"md-display-1"},[_vm._v("Funcionários")]),_vm._v(" "),_c('div',{staticClass:"md-layout"},[_c('md-table',{attrs:{"md-sort":"name","md-sort-order":"asc","md-card":"","md-fixed-header":""},scopedSlots:_vm._u([{key:"md-table-row",fn:function(ref){
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"funcionarios"}},[_c('div',{staticClass:"md-layout"},[_vm._m(0),_vm._v(" "),_c('div',{staticClass:"md-alignment-top-right"},[_c('md-button',[_vm._v("Novo Funcionário")])],1)]),_vm._v(" "),_c('div',{staticClass:"md-layout"},[_c('md-table',{attrs:{"md-sort":"name","md-sort-order":"asc","md-card":"","md-fixed-header":""},scopedSlots:_vm._u([{key:"md-table-row",fn:function(ref){
 var item = ref.item;
-return _c('md-table-row',{},[_c('md-table-cell',{attrs:{"md-label":"ID","md-sort-by":"id","md-numeric":""}},[_vm._v(_vm._s(item.id))]),_vm._v(" "),_c('md-table-cell',{attrs:{"md-label":"Name","md-sort-by":"name"}},[_vm._v(_vm._s(item.name))]),_vm._v(" "),_c('md-table-cell',{attrs:{"md-label":"Email","md-sort-by":"email"}},[_vm._v(_vm._s(item.email))]),_vm._v(" "),_c('md-table-cell',{attrs:{"md-label":"Gender","md-sort-by":"gender"}},[_vm._v(_vm._s(item.gender))]),_vm._v(" "),_c('md-table-cell',{attrs:{"md-label":"Job Title","md-sort-by":"title"}},[_vm._v(_vm._s(item.title))]),_vm._v(" "),_c('md-table-cell',{attrs:{"md-label":"Ações"}},[_c('md-button',{staticClass:"md-icon-button"},[_c('md-icon',[_vm._v("edit")])],1)],1)],1)}}]),model:{value:(_vm.users),callback:function ($$v) {_vm.users=$$v},expression:"users"}})],1)])}
-var staticRenderFns = []
+return _c('md-table-row',{},[_c('md-table-cell',{attrs:{"md-label":"ID","md-sort-by":"id","md-numeric":""}},[_vm._v(_vm._s(item.id))]),_vm._v(" "),_c('md-table-cell',{attrs:{"md-label":"Nome","md-sort-by":"name"}},[_vm._v(_vm._s(item.name))]),_vm._v(" "),_c('md-table-cell',{attrs:{"md-label":"Email","md-sort-by":"email"}},[_vm._v(_vm._s(item.email))]),_vm._v(" "),_c('md-table-cell',{attrs:{"md-label":"Usuário","md-sort-by":"user"}},[_vm._v(_vm._s(item.user))]),_vm._v(" "),_c('md-table-cell',{attrs:{"md-label":"Ações"}},[_c('md-button',{staticClass:"md-icon-button"},[_c('md-icon',[_vm._v("edit")])],1)],1)],1)}}]),model:{value:(_vm.users),callback:function ($$v) {_vm.users=$$v},expression:"users"}})],1)])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"md-layout-item"},[_c('span',{staticClass:"md-display-1"},[_vm._v("Funcionários")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 

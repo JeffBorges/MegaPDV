@@ -1,6 +1,13 @@
 <template>
     <div id='produtos'>
-        <span class="md-display-1">Produtos</span>
+        <div class='md-layout'>
+            <div class='md-layout-item'>
+                <span class="md-display-1">Produtos</span>
+            </div>
+            <div class='md-alignment-top-right'>
+                <md-button>Novo Produto</md-button>
+            </div>
+        </div>
         <div class='md-layout'>
             <div class='md-layout md-alignment-center-center md-gutter'>
             <md-card md-with-hover>
