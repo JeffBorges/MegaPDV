@@ -1,7 +1,8 @@
 <template>
   <md-app md-waterfall md-mode="fixed">
     <md-app-toolbar class="md-primary">
-      <div class="md-layout md-layout-item md-alignment-center-space-between">
+      <h3 class="md-title">Treinamento ThrustJs</h3>
+      <div class="md-layout md-layout-item md-alignment-center-right">
         <div v-if="isLoggedIn()">
           <md-button @click="logout()">
             Logout

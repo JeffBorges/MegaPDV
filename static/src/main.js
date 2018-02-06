@@ -14,6 +14,10 @@ Vue.use(VueMaterial)
 Vue.use(VueResource)
 Vue.use(VueAuth)
 
+// Vue.component('produtos-view', {
+//   template: ProdutosView
+// })
+
 // Vue.http.options.root = 'http://localhost:8778'
 
 var app = new Vue({
