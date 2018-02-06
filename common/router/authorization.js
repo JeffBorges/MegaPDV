@@ -22,15 +22,16 @@ function validateRoleUri(uri, method, usuario) {
     usuario.perfil.roles.indexOf(role[0].nome) >= 0
 }
 
-function validateAccess(request, response) {
+function validateAccess(params, request, response) {
   if (validatePublicUri(request.requestURI)
     || validateRoleUri(request.requestURI, request.method, request.userData.data)) {
     return true;
   }
+
   errorUtil.registrarErro(response, 'error.forbidden', 403);
   return false;
 }
 
 exports = {
-  validateAccess: validateAccess
+  middleware: validateAccess
 };

@@ -10,16 +10,14 @@ import LoginView from './views/LoginView.vue'
 import NotFoundView from './views/NotFoundView'
 import FuncionarioDetalhe from './views/FuncionarioDetalhe'
 
+import Env from 'env'
+
 Vue.use(VueRouter)
 Vue.use(VueMaterial)
 Vue.use(VueResource)
 Vue.use(VueAuth)
 
-// Vue.component('produtos-view', {
-//   template: ProdutosView
-// })
-
-// Vue.http.options.root = 'http://localhost:8778'
+Vue.http.options.root = Env.root
 
 var app = new Vue({
   el: '#app',

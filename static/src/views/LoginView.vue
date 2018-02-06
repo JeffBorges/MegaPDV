@@ -74,10 +74,10 @@ export default {
       this.sending = true;
 
       this.$http
-        .get("/app/public/auth/login", {
+        .get("@auth/login", {
           params: {
             username: this.form.username,
-            password: this.form.password
+            senha: this.form.password
           }
         })
         .then(
