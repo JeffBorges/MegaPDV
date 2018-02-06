@@ -16,11 +16,8 @@
       </div>
     </md-app-toolbar>
 
-    <md-app-content class="md-layout">
-      <div>
-        <!--<img src="https://avatars0.githubusercontent.com/u/32037620" />-->
-      </div>
-      <router-view></router-view>
+    <md-app-content class="md-layout md-alignment-top-center">
+      <router-view class='md-layout-item md-size-80'></router-view>
     </md-app-content>
   </md-app>
 </template>
@@ -52,6 +49,10 @@ export default {
 <style>
 .md-app {
   min-height: 100vh;
+}
+
+.md-app-content {
+  border: none;
 }
 
 .md-layout-column {

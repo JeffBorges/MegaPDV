@@ -8,6 +8,7 @@ import VueAuth from './core/auth'
 import HomeView from './views/HomeView.vue'
 import LoginView from './views/LoginView.vue'
 import NotFoundView from './views/NotFoundView'
+import FuncionarioDetalhe from './views/FuncionarioDetalhe'
 
 Vue.use(VueRouter)
 Vue.use(VueMaterial)
@@ -25,6 +26,7 @@ var app = new Vue({
   router: new VueRouter({
     routes: [
       { name: 'home', path: '/home', component: HomeView },
+      { name: 'funcionario', path: '/funcionario', component: FuncionarioDetalhe},
       { name: 'login', path: '/login', component: LoginView, alias: '/' },
       { name: 'notFound', path: '*', component: NotFoundView }
     ]

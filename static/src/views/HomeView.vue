@@ -1,8 +1,8 @@
 <template>
   <div class="md-layout">
     <md-content>
-    <FuncionariosView></FuncionariosView>
-    <ProdutosView></ProdutosView>
+      <FuncionariosView></FuncionariosView>
+      <ProdutosView></ProdutosView>
     </md-content>
   </div>
 </template>
@@ -20,8 +20,4 @@
 </script>
 
 <style scoped>
-  .md-content {
-    width:80%;
-    margin: 0 auto;
-  }
 </style>

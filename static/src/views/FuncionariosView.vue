@@ -5,7 +5,7 @@
                 <span class="md-display-1">Funcionários</span>
             </div>
             <div class='md-alignment-top-right'>
-                <md-button>Novo Funcionário</md-button>
+                <md-button @click='funcionario()'>Novo Funcionário</md-button>
             </div>
         </div>
         <div class='md-layout'>
@@ -16,7 +16,7 @@
                     <md-table-cell md-label="Email" md-sort-by="email">{{ item.email }}</md-table-cell>
                     <md-table-cell md-label="Usuário" md-sort-by="user">{{ item.user }}</md-table-cell>
                     <md-table-cell md-label="Ações">
-                        <md-button class="md-icon-button">
+                        <md-button @click='funcionario()' class="md-icon-button">
                             <md-icon>edit</md-icon>
                         </md-button>
                     </md-table-cell>
@@ -152,7 +152,12 @@
           user: 'Lorem Ipsum'
         }
       ]
-    })
+    }),
+    methods: {
+        funcionario() {
+            this.$router.push({ name: "funcionario" });
+        }
+    }
   }
 </script>
 

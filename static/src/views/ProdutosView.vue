@@ -5,7 +5,7 @@
                 <span class="md-display-1">Produtos</span>
             </div>
             <div class='md-alignment-top-right'>
-                <md-button>Novo Produto</md-button>
+                <md-button @click='produto()'>Novo Produto</md-button>
             </div>
         </div>
         <div class='md-layout'>
@@ -19,7 +19,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
                 </md-card-content>
                 <md-card-actions>
-                    <md-button>Editar</md-button>
+                    <md-button @click='produto()'>Editar</md-button>
                 </md-card-actions>
             </md-card>
             </div>
@@ -34,7 +34,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
                 </md-card-content>
                 <md-card-actions>
-                    <md-button>Editar</md-button>
+                    <md-button @click='produto()'>Editar</md-button>
                 </md-card-actions>
             </md-card>
             </div>
@@ -49,7 +49,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
                 </md-card-content>
                 <md-card-actions>
-                    <md-button>Editar</md-button>
+                    <md-button @click='produto()'>Editar</md-button>
                 </md-card-actions>
             </md-card>
             </div>
@@ -64,7 +64,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
                 </md-card-content>
                 <md-card-actions>
-                    <md-button>Editar</md-button>
+                    <md-button @click='produto()'>Editar</md-button>
                 </md-card-actions>
             </md-card>
             </div>
@@ -79,7 +79,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
                 </md-card-content>
                 <md-card-actions>
-                    <md-button>Editar</md-button>
+                    <md-button @click='produto()'>Editar</md-button>
                 </md-card-actions>
             </md-card>
             </div>
@@ -94,7 +94,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
                 </md-card-content>
                 <md-card-actions>
-                    <md-button>Editar</md-button>
+                    <md-button @click='produto()'>Editar</md-button>
                 </md-card-actions>
             </md-card>
             </div>
@@ -109,7 +109,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
                 </md-card-content>
                 <md-card-actions>
-                    <md-button>Editar</md-button>
+                    <md-button @click='produto()'>Editar</md-button>
                 </md-card-actions>
             </md-card>
             </div>
@@ -124,7 +124,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
                 </md-card-content>
                 <md-card-actions>
-                    <md-button>Editar</md-button>
+                    <md-button @click='produto()'>Editar</md-button>
                 </md-card-actions>
             </md-card>
             </div>
@@ -139,13 +139,23 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
                 </md-card-content>
                 <md-card-actions>
-                    <md-button>Editar</md-button>
+                    <md-button @click='produto()'>Editar</md-button>
                 </md-card-actions>
             </md-card>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        methods: {
+            produto() {
+                this.$router.push({ name: "produto" });
+            }
+        }
+    }
+</script>
 
 <style lang="css" scoped>
 
