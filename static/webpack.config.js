@@ -1,11 +1,15 @@
 var path = require('path')
 var webpack = require('webpack')
 
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+
+const ENVS_PATH = path.join(__dirname, 'envs/env.' + process.env.NODE_ENV)
+
 module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    publicPath: '/static/dist/',
     filename: 'build.js'
   },
   module: {
@@ -15,8 +19,8 @@ module.exports = {
         use: [
           'vue-style-loader',
           'css-loader'
-        ],
-      },      {
+        ]
+      }, {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
@@ -41,7 +45,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      'env': ENVS_PATH
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
@@ -56,7 +61,7 @@ module.exports = {
   devtool: '#eval-source-map'
 }
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'prod') {
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
@@ -65,14 +70,7 @@ if (process.env.NODE_ENV === 'production') {
         NODE_ENV: '"production"'
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: false,
-      compress: {
-        warnings: false
-      }
-    }),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true
-    })
+    new UglifyJSPlugin(),
+    new webpack.LoaderOptionsPlugin()
   ])
 }
